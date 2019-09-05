@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Gender QC</title>
+    </head>
+    <style>
+        body {background-color: powderblue;}
+        h4 {color: blue}
+    </style>
+    <body>
+        <h4> Gender of the sample is detected by finding bands in SRY gene</h4>
+        <!-- <p> Select the run folder for gender qc</p> -->
+        <form action="/text" method="post">
+            Enter the name of the run:<br>
+            <input type="text" name="Run" value=""><br>
+            Select the sample submission sheet:<br>
+            <!-- <input type="text" name="LIMS Sample Submission Sheet" value=""><br><br>
+            <input type="submit" value="Submit"> -->
+            <!-- <h3>A demonstration of how to access a File Upload Button</h3> -->
+
+            <input type="file" name="Submission Sheet" value = "" id="myFile"><br><br>
+<!-- 
+            <p>Click the "Try it" button to disable the file upload button.</p>
+
+            <button onclick="myFunction()">Try it</button> -->
+
+            <script>
+            function myFunction() {
+            var x = document.getElementById("myFile");
+            x.disabled = true;
+            }
+            </script>
+            <input type="submit" value="Submit"> 
+        </form>
+        <div id='foo'>
+            <br>
+            {% for comment in comments %}
+            <div class="row">
+                {{comment}}
+            </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>
