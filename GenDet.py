@@ -23,7 +23,7 @@ import os
 def Gendet(Runfolder, Samplesubsht):
         #change folder path name and add /*bam at the end of the path to import all bam files
     # Ydrive_path = "/media/sf_Y_DRIVE/"
-    Ydrive_path = "/var/snap/docker/common/var-lib-docker/volumes/Ydrivedata/_data/"
+    Ydrive_path = "/var/lib/docker/volumes/Ydrivedata/_data/"
     # Runfolder = input("Enter the name of the run folder to perform Gender QC: ")
     completepath = Ydrive_path + Runfolder
     print("Looking for bam files in : " + completepath + "....")
