@@ -13,7 +13,7 @@
         <!-- <p> Select the run folder for gender qc</p> -->
         <form action="/text" method="post">
             Enter the name of the run:<br>
-            <input type="text" name="Run" value=""><br>
+            <input type="text" name="Run" value="" required><br>
             Select the sample submission sheet:<br>
             <!-- <input type="text" name="LIMS Sample Submission Sheet" value=""><br><br>
             <input type="submit" value="Submit"> -->
@@ -31,7 +31,7 @@
             x.disabled = true;
             }
             </script>
-            <input type="submit" value="Submit"> 
+            <input type="submit" value="Submit" onclick="return empty()"/> 
         </form>
         <div id='foo'>
             <br>

@@ -45,7 +45,7 @@ def text(comments=[]):
     # return 'OK'
 # When python script is run , python assigns the name "__main__" to the script when executed
 if __name__=="__main__":
-    app.run(host='0.0.0.0', port = 5000, debug=True)
+    app.run(host='0.0.0.0', port = 8000, debug=True)
     # app.run(port=5000 , debug = True)
 
 # In[ ]:
